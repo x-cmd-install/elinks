@@ -1,15 +1,17 @@
 about:
-  description: This repo is cloned from http://elinks.cz/elinks.git for translation. This is NOT UPSTREAM
+  description:
+  |
+    This repo is cloned from http://elinks.cz/elinks.git for translation. This is NOT UPSTREAM
   license: NOASSERTION
   homepage: http://elinks.or.cz/index.html
   head: f86be65
   archived: false
   latestVersion: 
-  collectedAt: 2026-09-04T05:05:08Z
+  collectedAt: 2026-09-04T19:59:12Z
 timeline:
   created: 2011-08-30
   lastCommit: 2017-07-23
-  lastRelease: ?
+  lastRelease: 
 popularity:
   star: 52
   watcher: 2
@@ -38,10 +40,18 @@ language:
   Vim Script: 5366
   CSS: 1445
   Awk: 1423
-totalLine: 5219928
+totalBytes: 5219928
 recent:
   last30d:
     since: 2026-08-05
+    release: 0
+    mergedPR: 0
+    openPR: 0
+    closedIssue: 0
+    openIssue: 0
+    commit: 0
+  last60d:
+    since: 2026-07-06
     release: 0
     mergedPR: 0
     openPR: 0
@@ -72,3 +82,21 @@ recent:
     closedIssue: 0
     openIssue: 0
     commit: 0
+  last720d:
+    since: 2024-09-14
+    release: 0
+    mergedPR: 0
+    openPR: 0
+    closedIssue: 0
+    openIssue: 0
+    commit: 0
+total:
+  release: 0
+  mergedPR: 0
+  openPR: 1
+  closedIssue: 0
+  openIssue: 2
+  commit: 4008
+---
+---
+
