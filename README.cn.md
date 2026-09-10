@@ -4,13 +4,25 @@
 
 This repo is cloned from http://elinks.cz/elinks.git for translation. This is NOT UPSTREAM
 
-![elinks](https://repo.x-cmd.io/elinks.svg)
+![elinks](https://repo.x-cmd.io/elinks.svg?lang=zh)
 
 ## 安装
 
 ```sh
 x install elinks
 ```
+
+## 代码规模
+
+合计: **133,082** 行代码（覆盖前 5 种语言、共 **692** 个文件）。
+
+| 语言 | 代码 | 注释 | 空行 | 文件数 |
+|------|-----:|-----:|-----:|------:|
+| C | 92,916 | 13,467 | 23,504 | 297 |
+| Bitbake | 13,006 | 995 | 788 | 28 |
+| CHeader | 10,583 | 4,877 | 4,086 | 304 |
+| Python | 4,031 | 403 | 207 | 10 |
+| Html | 2,594 | 7 | 103 | 53 |
 
 ## 源代码
 
@@ -31,20 +43,29 @@ x install elinks
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
 | 30d | 2026-08-11 | 0 | 0 | 0 | 0 | 0 | 0 |
+| last60d | 2026-07-12 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 90d | 2026-06-12 | 0 | 0 | 0 | 0 | 0 | 0 |
+| last180d | 2026-03-14 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 360d | 2025-09-15 | 0 | 0 | 0 | 0 | 0 | 0 |
+| last720d | 2024-09-20 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-## 代码规模
+## 发行版状态
 
-合计: **133,082** 行代码（覆盖前 5 种语言、共 **692** 个文件）。
+在 [repology.org](https://repology.org/project/elinks) 上共有 **160** 个发行版报告此项目。**26** 个 ✅ 已是最新上游版本，**122** 个 ⚠️ 使用旧版本。
 
-| 语言 | 代码 | 注释 | 空行 | 文件数 |
-|------|-----:|-----:|-----:|------:|
-| C | 92,916 | 13,467 | 23,504 | 297 |
-| Bitbake | 13,006 | 995 | 788 | 28 |
-| CHeader | 10,583 | 4,877 | 4,086 | 304 |
-| Python | 4,031 | 403 | 207 | 10 |
-| Html | 2,594 | 7 | 103 | 53 |
+| 发行版 | 版本 | 状态 |
+|--------|------|------|
+| Debian unstable | `0.19.1` | ⚠️ outdated |
+| Debian 14 | `0.19.1` | ⚠️ outdated |
+| Debian 13 | `0.18.0` | ⚠️ outdated |
+| Ubuntu 26.04 LTS | `0.19.1` | ⚠️ outdated |
+| Ubuntu 24.04 LTS | `0.16.1.1` | ⚠️ outdated |
+| Arch | `0.20.0` | ✅ latest |
+| Fedora rawhide | `0.20.0` | ✅ latest |
+| Nix unstable | `0.20.0` | ✅ latest |
+| Void | `0.20.0` | ✅ latest |
+| Alpine edge | `0.20.0` | ✅ latest |
+| openSUSE Tumbleweed | `0.19.1` | ⚠️ outdated |
 
 ## 改进这些数据
 
@@ -55,4 +76,4 @@ elinks 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) �
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/260910.yml` · 2026-09-10T06:17:53Z._
+_数据快照: `data/card/260910.yml` · 2026-09-10T20:39:26Z._
