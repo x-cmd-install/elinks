@@ -1,11 +1,5 @@
-- repo: pld
-  srcname: elinks
-  visiblename: elinks
-  version: 0.20.0
-  origversion: 0.20.0-2
-  status: newest
-- repo: apertis_v2023
-  subrepo: v2023/development
+- repo: pureos_byzantium
+  subrepo: byzantium/main
   srcname: elinks
   binnames:
     - elinks
@@ -13,21 +7,72 @@
     - elinks-doc
   visiblename: elinks
   version: 0.13.2
-  origversion: 0.13.2-1apertis0
+  origversion: 0.13.2-1
   status: outdated
   maintainers:
     - aelmahmoudy@users.sourceforge.net
-- repo: arch
-  subrepo: extra
+  categories:
+    - web
+- repo: pureos_landing
+  subrepo: landing/main
   srcname: elinks
-  binname: elinks
+  binnames:
+    - elinks
+    - elinks-data
+    - elinks-doc
   visiblename: elinks
-  version: 0.20.0
-  origversion: 0.20.0-1
-  status: newest
-  summary: Advanced feature-rich text-mode web browser
-  licenses:
-    - GPL-2.0-only
+  version: 0.18.0
+  origversion: 0.18.0-1
+  status: outdated
+  maintainers:
+    - aelmahmoudy@users.sourceforge.net
+  categories:
+    - web
+- repo: raspbian_oldstable
+  subrepo: main
+  srcname: elinks
+  binnames:
+    - elinks
+    - elinks-data
+    - elinks-doc
+  visiblename: elinks
+  version: 0.13.2
+  origversion: 0.13.2-1
+  status: outdated
+  maintainers:
+    - aelmahmoudy@users.sourceforge.net
+  categories:
+    - web
+- repo: raspbian_stable
+  subrepo: main
+  srcname: elinks
+  binnames:
+    - elinks
+    - elinks-data
+    - elinks-doc
+  visiblename: elinks
+  version: 0.18.0
+  origversion: 0.18.0-1+rpi1
+  status: outdated
+  maintainers:
+    - aelmahmoudy@users.sourceforge.net
+  categories:
+    - web
+- repo: raspbian_testing
+  subrepo: main
+  srcname: elinks
+  binnames:
+    - elinks
+    - elinks-data
+    - elinks-doc
+  visiblename: elinks
+  version: 0.19.1
+  origversion: 0.19.1-2.1
+  status: outdated
+  maintainers:
+    - aelmahmoudy@users.sourceforge.net
+  categories:
+    - web
 - repo: almalinux_8
   subrepo: PowerTools
   srcname: elinks
@@ -416,7 +461,7 @@
     - elinks-debuginfo
   visiblename: elinks
   version: 0.20.0
-  origversion: 0.20.0-alt1
+  origversion: 0.20.0-alt2
   status: newest
   summary: Lynx-like text WWW browser with many features
   maintainers:
@@ -437,6 +482,30 @@
     - fallback-mnt-aosc@repology
   categories:
     - web
+- repo: apertis_v2023
+  subrepo: v2023/development
+  srcname: elinks
+  binnames:
+    - elinks
+    - elinks-data
+    - elinks-doc
+  visiblename: elinks
+  version: 0.13.2
+  origversion: 0.13.2-1apertis0
+  status: outdated
+  maintainers:
+    - aelmahmoudy@users.sourceforge.net
+- repo: arch
+  subrepo: extra
+  srcname: elinks
+  binname: elinks
+  visiblename: elinks
+  version: 0.20.0
+  origversion: 0.20.0-1
+  status: newest
+  summary: Advanced feature-rich text-mode web browser
+  licenses:
+    - GPL-2.0-only
 - repo: arch_testing
   subrepo: extra-testing
   srcname: elinks
@@ -1013,18 +1082,6 @@
     - GPL-2
   categories:
     - www-client
-- repo: pkgsrc_current
-  srcname: www/elinks
-  binname: elinks
-  visiblename: www/elinks
-  version: 0.18.0
-  origversion: 0.18.0nb7
-  status: outdated
-  summary: Feature-rich text mode web browser
-  maintainers:
-    - pkgsrc-users@netbsd.org
-  categories:
-    - www
 - repo: liguros_develop
   srcname: www-client/elinks
   visiblename: www-client/elinks
@@ -1067,6 +1124,20 @@
     - GPL-2
   categories:
     - www-client
+- repo: rocky_8
+  subrepo: PowerTools
+  srcname: elinks
+  visiblename: elinks
+  version: 0.12-pre6
+  origversion: 0.12-0.58.pre6.el8
+  status: outdated
+  summary: A text-mode Web browser
+  maintainers:
+    - infrastructure@rockylinux.org
+  licenses:
+    - GPLv2
+  categories:
+    - Applications/Internet
 - repo: liguros_develop
   srcname: www-client/elinks
   visiblename: www-client/elinks
@@ -1158,23 +1229,23 @@
   srcname: elinks
   binname: elinks
   visiblename: elinks
-  version: 0.16.1.1
-  origversion: 0.16.1.1-2
-  status: outdated
-  summary: Advanced, feature-rich text mode web browser
+  version: 0.20.0
+  origversion: 0.20.0-1
+  status: newest
+  summary: Advanced feature-rich text-mode web browser
   licenses:
-    - GPL
+    - GPL-2.0-only
 - repo: manjaro_testing
   subrepo: extra
   srcname: elinks
   binname: elinks
   visiblename: elinks
-  version: 0.16.1.1
-  origversion: 0.16.1.1-2
-  status: outdated
-  summary: Advanced, feature-rich text mode web browser
+  version: 0.20.0
+  origversion: 0.20.0-1
+  status: newest
+  summary: Advanced feature-rich text-mode web browser
   licenses:
-    - GPL
+    - GPL-2.0-only
 - repo: manjaro_unstable
   subrepo: extra
   srcname: elinks
@@ -1245,6 +1316,22 @@
     - iblech@speicherleck.de
   licenses:
     - GPL-2.0
+- repo: openmamba
+  subrepo: base
+  srcname: elinks
+  binnames:
+    - elinks
+  visiblename: elinks
+  version: 0.20.0
+  origversion: 0.20.0-1mamba
+  status: newest
+  summary: An advanced and well-established feature-rich text mode web browser
+  maintainers:
+    - silvan@openmamba.org
+  licenses:
+    - GPL
+  categories:
+    - Applications/Web
 - repo: nix_stable_26_05
   srcname: elinks
   visiblename: elinks
@@ -1337,22 +1424,6 @@
     - packaging@lists.openkylin.top
   categories:
     - web
-- repo: openmamba
-  subrepo: base
-  srcname: elinks
-  binnames:
-    - elinks
-  visiblename: elinks
-  version: 0.20.0
-  origversion: 0.20.0-1mamba
-  status: newest
-  summary: An advanced and well-established feature-rich text mode web browser
-  maintainers:
-    - silvan@openmamba.org
-  licenses:
-    - GPL
-  categories:
-    - Applications/Web
 - repo: openmandriva_6_0
   subrepo: main/release
   srcname: elinks
@@ -1407,17 +1478,6 @@
     - GPLv2+
   categories:
     - Networking/WWW
-- repo: openpkg_current
-  srcname: elinks
-  visiblename: elinks
-  version: 0.12pre6
-  origversion: null
-  status: outdated
-  summary: Interactive Full-Screen Client for HTTP/HTTPS/FTP Protocols
-  licenses:
-    - GPL
-  categories:
-    - Web
 - repo: opensuse_leap_15_5
   subrepo: main/oss
   srcname: elinks
@@ -1466,7 +1526,7 @@
     - elinks-debugsource
   visiblename: elinks
   version: 0.20.0
-  origversion: 0.20.0-39.4
+  origversion: 0.20.0-39.5
   status: newest
   summary: An advanced and well-established feature-rich text mode web browser
   licenses:
@@ -1562,6 +1622,24 @@
     - pkgsrc-users@netbsd.org
   categories:
     - www
+- repo: pkgsrc_current
+  srcname: www/elinks
+  binname: elinks
+  visiblename: www/elinks
+  version: 0.18.0
+  origversion: 0.18.0nb7
+  status: outdated
+  summary: Feature-rich text mode web browser
+  maintainers:
+    - pkgsrc-users@netbsd.org
+  categories:
+    - www
+- repo: pld
+  srcname: elinks
+  visiblename: elinks
+  version: 0.20.0
+  origversion: 0.20.0-2
+  status: newest
 - repo: pureos_amber
   subrepo: amber/main
   srcname: elinks
@@ -1577,95 +1655,6 @@
     - aelmahmoudy@users.sourceforge.net
   categories:
     - web
-- repo: pureos_byzantium
-  subrepo: byzantium/main
-  srcname: elinks
-  binnames:
-    - elinks
-    - elinks-data
-    - elinks-doc
-  visiblename: elinks
-  version: 0.13.2
-  origversion: 0.13.2-1
-  status: outdated
-  maintainers:
-    - aelmahmoudy@users.sourceforge.net
-  categories:
-    - web
-- repo: pureos_landing
-  subrepo: landing/main
-  srcname: elinks
-  binnames:
-    - elinks
-    - elinks-data
-    - elinks-doc
-  visiblename: elinks
-  version: 0.18.0
-  origversion: 0.18.0-1
-  status: outdated
-  maintainers:
-    - aelmahmoudy@users.sourceforge.net
-  categories:
-    - web
-- repo: raspbian_oldstable
-  subrepo: main
-  srcname: elinks
-  binnames:
-    - elinks
-    - elinks-data
-    - elinks-doc
-  visiblename: elinks
-  version: 0.13.2
-  origversion: 0.13.2-1
-  status: outdated
-  maintainers:
-    - aelmahmoudy@users.sourceforge.net
-  categories:
-    - web
-- repo: raspbian_stable
-  subrepo: main
-  srcname: elinks
-  binnames:
-    - elinks
-    - elinks-data
-    - elinks-doc
-  visiblename: elinks
-  version: 0.18.0
-  origversion: 0.18.0-1+rpi1
-  status: outdated
-  maintainers:
-    - aelmahmoudy@users.sourceforge.net
-  categories:
-    - web
-- repo: raspbian_testing
-  subrepo: main
-  srcname: elinks
-  binnames:
-    - elinks
-    - elinks-data
-    - elinks-doc
-  visiblename: elinks
-  version: 0.19.1
-  origversion: 0.19.1-2.1
-  status: outdated
-  maintainers:
-    - aelmahmoudy@users.sourceforge.net
-  categories:
-    - web
-- repo: rocky_8
-  subrepo: PowerTools
-  srcname: elinks
-  visiblename: elinks
-  version: 0.12-pre6
-  origversion: 0.12-0.58.pre6.el8
-  status: outdated
-  summary: A text-mode Web browser
-  maintainers:
-    - infrastructure@rockylinux.org
-  licenses:
-    - GPLv2
-  categories:
-    - Applications/Internet
 - repo: rosa_2019_1
   subrepo: contrib/release
   srcname: elinks
@@ -1906,6 +1895,21 @@
     - aelmahmoudy@users.sourceforge.net
   categories:
     - universe/web
+- repo: ubuntu_27_04
+  subrepo: tenacious/universe
+  srcname: elinks
+  binnames:
+    - elinks
+    - elinks-data
+    - elinks-doc
+  visiblename: elinks
+  version: 0.19.1
+  origversion: 0.19.1-2.1build1
+  status: outdated
+  maintainers:
+    - aelmahmoudy@users.sourceforge.net
+  categories:
+    - universe/web
 - repo: void_x86_64
   subrepo: x86_64
   srcname: elinks
@@ -1938,30 +1942,6 @@
   summary: text-based web browser
   licenses:
     - GNU General Public License, version 2.0
-- repo: amazon_2
-  srcname: elinks
-  visiblename: elinks
-  version: "0.12"
-  origversion: 0.12-0.57.pre6.amzn2.0.2
-  status: outdated
-  summary: A text-mode Web browser
-  licenses:
-    - GPLv2
-  categories:
-    - Applications/Internet
-  vulnerable: true
-- repo: amazon_2
-  srcname: elinks
-  visiblename: elinks
-  version: "0.12"
-  origversion: 0.12-0.57.pre6.amzn2
-  status: outdated
-  summary: A text-mode Web browser
-  licenses:
-    - GPLv2
-  categories:
-    - Applications/Internet
-  vulnerable: true
 - repo: amazon_1
   subrepo: main
   srcname: elinks
@@ -1980,6 +1960,30 @@
   visiblename: elinks
   version: "0.12"
   origversion: 0.12-0.36.pre6.amzn2
+  status: outdated
+  summary: A text-mode Web browser
+  licenses:
+    - GPLv2
+  categories:
+    - Applications/Internet
+  vulnerable: true
+- repo: amazon_2
+  srcname: elinks
+  visiblename: elinks
+  version: "0.12"
+  origversion: 0.12-0.57.pre6.amzn2.0.2
+  status: outdated
+  summary: A text-mode Web browser
+  licenses:
+    - GPLv2
+  categories:
+    - Applications/Internet
+  vulnerable: true
+- repo: amazon_2
+  srcname: elinks
+  visiblename: elinks
+  version: "0.12"
+  origversion: 0.12-0.57.pre6.amzn2
   status: outdated
   summary: A text-mode Web browser
   licenses:
