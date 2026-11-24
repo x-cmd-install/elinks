@@ -1,50 +1,28 @@
-- repo: raspbian_stable
-  subrepo: main
+- repo: gnuguix
   srcname: elinks
-  binnames:
-    - elinks
-    - elinks-data
-    - elinks-doc
-  visiblename: elinks
-  version: 0.18.0
-  origversion: 0.18.0-1+rpi1
-  status: outdated
-  maintainers:
-    - aelmahmoudy@users.sourceforge.net
-  categories:
-    - web
-- repo: raspbian_testing
-  subrepo: main
-  srcname: elinks
-  binnames:
-    - elinks
-    - elinks-data
-    - elinks-doc
+  binname: elinks
   visiblename: elinks
   version: 0.19.1
-  origversion: 0.19.1-2.1
-  status: outdated
-  maintainers:
-    - aelmahmoudy@users.sourceforge.net
-  categories:
-    - web
-- repo: nix_stable_25_11
-  srcname: elinks
-  visiblename: elinks
-  version: 0.18.0
   origversion: null
   status: outdated
-  summary: Full-featured text-mode web browser
-  maintainers:
-    - iblech@speicherleck.de
+  summary: Advanced text mode web browser
+- repo: gobolinux
+  srcname: Elinks
+  visiblename: Elinks
+  version: 0.11.7
+  origversion: null
+  status: outdated
+  summary: An enhanced version of Links, a text-based web browser
   licenses:
-    - GPL-2.0
-- repo: pld
-  srcname: elinks
-  visiblename: elinks
-  version: 0.20.0
-  origversion: 0.20.0-2
-  status: newest
+    - GNU General Public License version 2
+- repo: haikuports_master
+  srcname: www-client/elinks
+  visiblename: www-client/elinks
+  version: 0.19.1
+  origversion: null
+  status: outdated
+  categories:
+    - www-client
 - repo: almalinux_8
   subrepo: PowerTools
   srcname: elinks
@@ -150,266 +128,6 @@
     - ncopa@alpinelinux.org
   licenses:
     - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_19
-  subrepo: main
-  srcname: elinks
-  binname: elinks-doc
-  visiblename: elinks-doc
-  version: 0.16.1.1
-  origversion: 0.16.1.1-r0
-  status: outdated
-  summary: Advanced and well-established feature-rich text mode web browser (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_19
-  subrepo: main
-  srcname: elinks
-  binname: elinks-lang
-  visiblename: elinks-lang
-  version: 0.16.1.1
-  origversion: 0.16.1.1-r0
-  status: outdated
-  summary: Languages for package elinks
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_20
-  subrepo: main
-  srcname: elinks
-  binname: elinks
-  visiblename: elinks
-  version: 0.17.0
-  origversion: 0.17.0-r0
-  status: outdated
-  summary: Advanced and well-established feature-rich text mode web browser
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_20
-  subrepo: main
-  srcname: elinks
-  binname: elinks-doc
-  visiblename: elinks-doc
-  version: 0.17.0
-  origversion: 0.17.0-r0
-  status: outdated
-  summary: Advanced and well-established feature-rich text mode web browser (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_20
-  subrepo: main
-  srcname: elinks
-  binname: elinks-lang
-  visiblename: elinks-lang
-  version: 0.17.0
-  origversion: 0.17.0-r0
-  status: outdated
-  summary: Languages for package elinks
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_21
-  subrepo: main
-  srcname: elinks
-  binname: elinks
-  visiblename: elinks
-  version: 0.17.1.1
-  origversion: 0.17.1.1-r1
-  status: outdated
-  summary: Advanced and well-established feature-rich text mode web browser
-  maintainers:
-    - cielesti@protonmail.com
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_21
-  subrepo: main
-  srcname: elinks
-  binname: elinks-doc
-  visiblename: elinks-doc
-  version: 0.17.1.1
-  origversion: 0.17.1.1-r1
-  status: outdated
-  summary: Advanced and well-established feature-rich text mode web browser (documentation)
-  maintainers:
-    - cielesti@protonmail.com
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_21
-  subrepo: main
-  srcname: elinks
-  binname: elinks-lang
-  visiblename: elinks-lang
-  version: 0.17.1.1
-  origversion: 0.17.1.1-r1
-  status: outdated
-  summary: Languages for package elinks
-  maintainers:
-    - cielesti@protonmail.com
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_22
-  subrepo: main
-  srcname: elinks
-  binname: elinks
-  visiblename: elinks
-  version: 0.18.0
-  origversion: 0.18.0-r0
-  status: outdated
-  summary: Advanced and well-established feature-rich text mode web browser
-  maintainers:
-    - cielesti@protonmail.com
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_22
-  subrepo: main
-  srcname: elinks
-  binname: elinks-doc
-  visiblename: elinks-doc
-  version: 0.18.0
-  origversion: 0.18.0-r0
-  status: outdated
-  summary: Advanced and well-established feature-rich text mode web browser (documentation)
-  maintainers:
-    - cielesti@protonmail.com
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_22
-  subrepo: main
-  srcname: elinks
-  binname: elinks-lang
-  visiblename: elinks-lang
-  version: 0.18.0
-  origversion: 0.18.0-r0
-  status: outdated
-  summary: Languages for package elinks
-  maintainers:
-    - cielesti@protonmail.com
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_23
-  subrepo: main
-  srcname: elinks
-  binname: elinks
-  visiblename: elinks
-  version: 0.18.0
-  origversion: 0.18.0-r1
-  status: outdated
-  summary: Advanced and well-established feature-rich text mode web browser
-  maintainers:
-    - cielesti@protonmail.com
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_23
-  subrepo: main
-  srcname: elinks
-  binname: elinks-doc
-  visiblename: elinks-doc
-  version: 0.18.0
-  origversion: 0.18.0-r1
-  status: outdated
-  summary: Advanced and well-established feature-rich text mode web browser (documentation)
-  maintainers:
-    - cielesti@protonmail.com
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_23
-  subrepo: main
-  srcname: elinks
-  binname: elinks-lang
-  visiblename: elinks-lang
-  version: 0.18.0
-  origversion: 0.18.0-r1
-  status: outdated
-  summary: Languages for package elinks
-  maintainers:
-    - cielesti@protonmail.com
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_24
-  subrepo: main
-  srcname: elinks
-  binname: elinks
-  visiblename: elinks
-  version: 0.19.1
-  origversion: 0.19.1-r0
-  status: outdated
-  summary: Advanced and well-established feature-rich text mode web browser
-  maintainers:
-    - hannes@hannesbraun.net
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_24
-  subrepo: main
-  srcname: elinks
-  binname: elinks-doc
-  visiblename: elinks-doc
-  version: 0.19.1
-  origversion: 0.19.1-r0
-  status: outdated
-  summary: Advanced and well-established feature-rich text mode web browser (documentation)
-  maintainers:
-    - hannes@hannesbraun.net
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_3_24
-  subrepo: main
-  srcname: elinks
-  binname: elinks-lang
-  visiblename: elinks-lang
-  version: 0.19.1
-  origversion: 0.19.1-r0
-  status: outdated
-  summary: Languages for package elinks
-  maintainers:
-    - hannes@hannesbraun.net
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_edge
-  subrepo: main
-  srcname: elinks
-  binname: elinks
-  visiblename: elinks
-  version: 0.20.0
-  origversion: 0.20.0-r0
-  status: newest
-  summary: Advanced and well-established feature-rich text mode web browser
-  maintainers:
-    - hannes@hannesbraun.net
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_edge
-  subrepo: main
-  srcname: elinks
-  binname: elinks-doc
-  visiblename: elinks-doc
-  version: 0.20.0
-  origversion: 0.20.0-r0
-  status: newest
-  summary: Advanced and well-established feature-rich text mode web browser (documentation)
-  maintainers:
-    - hannes@hannesbraun.net
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
-- repo: alpine_edge
-  subrepo: main
-  srcname: elinks
-  binname: elinks-lang
-  visiblename: elinks-lang
-  version: 0.20.0
-  origversion: 0.20.0-r0
-  status: newest
-  summary: Languages for package elinks
-  maintainers:
-    - hannes@hannesbraun.net
-  licenses:
-    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
 - repo: alt_p11
   srcname: elinks
   binnames:
@@ -426,6 +144,266 @@
     - GPLv2
   categories:
     - Networking/WWW
+- repo: alpine_3_19
+  subrepo: main
+  srcname: elinks
+  binname: elinks-doc
+  visiblename: elinks-doc
+  version: 0.16.1.1
+  origversion: 0.16.1.1-r0
+  status: outdated
+  summary: Advanced and well-established feature-rich text mode web browser (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_19
+  subrepo: main
+  srcname: elinks
+  binname: elinks-lang
+  visiblename: elinks-lang
+  version: 0.16.1.1
+  origversion: 0.16.1.1-r0
+  status: outdated
+  summary: Languages for package elinks
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_20
+  subrepo: main
+  srcname: elinks
+  binname: elinks
+  visiblename: elinks
+  version: 0.17.0
+  origversion: 0.17.0-r0
+  status: outdated
+  summary: Advanced and well-established feature-rich text mode web browser
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_20
+  subrepo: main
+  srcname: elinks
+  binname: elinks-doc
+  visiblename: elinks-doc
+  version: 0.17.0
+  origversion: 0.17.0-r0
+  status: outdated
+  summary: Advanced and well-established feature-rich text mode web browser (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_20
+  subrepo: main
+  srcname: elinks
+  binname: elinks-lang
+  visiblename: elinks-lang
+  version: 0.17.0
+  origversion: 0.17.0-r0
+  status: outdated
+  summary: Languages for package elinks
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_21
+  subrepo: main
+  srcname: elinks
+  binname: elinks
+  visiblename: elinks
+  version: 0.17.1.1
+  origversion: 0.17.1.1-r1
+  status: outdated
+  summary: Advanced and well-established feature-rich text mode web browser
+  maintainers:
+    - cielesti@protonmail.com
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_21
+  subrepo: main
+  srcname: elinks
+  binname: elinks-doc
+  visiblename: elinks-doc
+  version: 0.17.1.1
+  origversion: 0.17.1.1-r1
+  status: outdated
+  summary: Advanced and well-established feature-rich text mode web browser (documentation)
+  maintainers:
+    - cielesti@protonmail.com
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_21
+  subrepo: main
+  srcname: elinks
+  binname: elinks-lang
+  visiblename: elinks-lang
+  version: 0.17.1.1
+  origversion: 0.17.1.1-r1
+  status: outdated
+  summary: Languages for package elinks
+  maintainers:
+    - cielesti@protonmail.com
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_22
+  subrepo: main
+  srcname: elinks
+  binname: elinks
+  visiblename: elinks
+  version: 0.18.0
+  origversion: 0.18.0-r0
+  status: outdated
+  summary: Advanced and well-established feature-rich text mode web browser
+  maintainers:
+    - cielesti@protonmail.com
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_22
+  subrepo: main
+  srcname: elinks
+  binname: elinks-doc
+  visiblename: elinks-doc
+  version: 0.18.0
+  origversion: 0.18.0-r0
+  status: outdated
+  summary: Advanced and well-established feature-rich text mode web browser (documentation)
+  maintainers:
+    - cielesti@protonmail.com
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_22
+  subrepo: main
+  srcname: elinks
+  binname: elinks-lang
+  visiblename: elinks-lang
+  version: 0.18.0
+  origversion: 0.18.0-r0
+  status: outdated
+  summary: Languages for package elinks
+  maintainers:
+    - cielesti@protonmail.com
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_23
+  subrepo: main
+  srcname: elinks
+  binname: elinks
+  visiblename: elinks
+  version: 0.18.0
+  origversion: 0.18.0-r1
+  status: outdated
+  summary: Advanced and well-established feature-rich text mode web browser
+  maintainers:
+    - cielesti@protonmail.com
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_23
+  subrepo: main
+  srcname: elinks
+  binname: elinks-doc
+  visiblename: elinks-doc
+  version: 0.18.0
+  origversion: 0.18.0-r1
+  status: outdated
+  summary: Advanced and well-established feature-rich text mode web browser (documentation)
+  maintainers:
+    - cielesti@protonmail.com
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_23
+  subrepo: main
+  srcname: elinks
+  binname: elinks-lang
+  visiblename: elinks-lang
+  version: 0.18.0
+  origversion: 0.18.0-r1
+  status: outdated
+  summary: Languages for package elinks
+  maintainers:
+    - cielesti@protonmail.com
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_24
+  subrepo: main
+  srcname: elinks
+  binname: elinks
+  visiblename: elinks
+  version: 0.19.1
+  origversion: 0.19.1-r0
+  status: outdated
+  summary: Advanced and well-established feature-rich text mode web browser
+  maintainers:
+    - hannes@hannesbraun.net
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_24
+  subrepo: main
+  srcname: elinks
+  binname: elinks-doc
+  visiblename: elinks-doc
+  version: 0.19.1
+  origversion: 0.19.1-r0
+  status: outdated
+  summary: Advanced and well-established feature-rich text mode web browser (documentation)
+  maintainers:
+    - hannes@hannesbraun.net
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_3_24
+  subrepo: main
+  srcname: elinks
+  binname: elinks-lang
+  visiblename: elinks-lang
+  version: 0.19.1
+  origversion: 0.19.1-r0
+  status: outdated
+  summary: Languages for package elinks
+  maintainers:
+    - hannes@hannesbraun.net
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_edge
+  subrepo: main
+  srcname: elinks
+  binname: elinks
+  visiblename: elinks
+  version: 0.20.0
+  origversion: 0.20.0-r0
+  status: newest
+  summary: Advanced and well-established feature-rich text mode web browser
+  maintainers:
+    - hannes@hannesbraun.net
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_edge
+  subrepo: main
+  srcname: elinks
+  binname: elinks-doc
+  visiblename: elinks-doc
+  version: 0.20.0
+  origversion: 0.20.0-r0
+  status: newest
+  summary: Advanced and well-established feature-rich text mode web browser (documentation)
+  maintainers:
+    - hannes@hannesbraun.net
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
+- repo: alpine_edge
+  subrepo: main
+  srcname: elinks
+  binname: elinks-lang
+  visiblename: elinks-lang
+  version: 0.20.0
+  origversion: 0.20.0-r0
+  status: newest
+  summary: Languages for package elinks
+  maintainers:
+    - hannes@hannesbraun.net
+  licenses:
+    - GPL-2.0-or-later AND GPL-3.0-or-later AND MIT AND MPL-1.1
 - repo: altsisyphus
   srcname: elinks
   binnames:
@@ -513,21 +491,6 @@
     - GPLv2
   categories:
     - Applications/Internet
-- repo: pureos_amber
-  subrepo: amber/main
-  srcname: elinks
-  binnames:
-    - elinks
-    - elinks-data
-    - elinks-doc
-  visiblename: elinks
-  version: 0.13~20190125
-  origversion: 0.13~20190125-3
-  status: outdated
-  maintainers:
-    - aelmahmoudy@users.sourceforge.net
-  categories:
-    - web
 - repo: centos_8
   subrepo: PowerTools
   srcname: elinks
@@ -632,6 +595,18 @@
     - aelmahmoudy@users.sourceforge.net
   categories:
     - web
+- repo: amazon_2
+  srcname: elinks
+  visiblename: elinks
+  version: "0.12"
+  origversion: 0.12-0.36.pre6.amzn2
+  status: outdated
+  summary: A text-mode Web browser
+  licenses:
+    - GPLv2
+  categories:
+    - Applications/Internet
+  vulnerable: true
 - repo: debian_unstable
   subrepo: sid/main
   srcname: elinks
@@ -957,31 +932,6 @@
     - GPL-2
   categories:
     - www-client
-- repo: gnuguix
-  srcname: elinks
-  binname: elinks
-  visiblename: elinks
-  version: 0.19.1
-  origversion: null
-  status: outdated
-  summary: Advanced text mode web browser
-- repo: gobolinux
-  srcname: Elinks
-  visiblename: Elinks
-  version: 0.11.7
-  origversion: null
-  status: outdated
-  summary: An enhanced version of Links, a text-based web browser
-  licenses:
-    - GNU General Public License version 2
-- repo: haikuports_master
-  srcname: www-client/elinks
-  visiblename: www-client/elinks
-  version: 0.19.1
-  origversion: null
-  status: outdated
-  categories:
-    - www-client
 - repo: kali_rolling
   subrepo: main
   srcname: elinks
@@ -1062,21 +1012,6 @@
     - GPL-2
   categories:
     - www-client
-- repo: pureos_byzantium
-  subrepo: byzantium/main
-  srcname: elinks
-  binnames:
-    - elinks
-    - elinks-data
-    - elinks-doc
-  visiblename: elinks
-  version: 0.13.2
-  origversion: 0.13.2-1
-  status: outdated
-  maintainers:
-    - aelmahmoudy@users.sourceforge.net
-  categories:
-    - web
 - repo: liguros_develop
   srcname: www-client/elinks
   visiblename: www-client/elinks
@@ -1181,7 +1116,7 @@
   binname: elinks
   visiblename: elinks
   version: 0.20.0
-  origversion: 0.20.0-1
+  origversion: 0.20.0-2
   status: newest
   summary: Advanced feature-rich text-mode web browser
   licenses:
@@ -1256,21 +1191,17 @@
     - iblech@speicherleck.de
   licenses:
     - GPL-2.0
-- repo: pureos_landing
-  subrepo: landing/main
+- repo: nix_stable_25_11
   srcname: elinks
-  binnames:
-    - elinks
-    - elinks-data
-    - elinks-doc
   visiblename: elinks
   version: 0.18.0
-  origversion: 0.18.0-1
+  origversion: null
   status: outdated
+  summary: Full-featured text-mode web browser
   maintainers:
-    - aelmahmoudy@users.sourceforge.net
-  categories:
-    - web
+    - iblech@speicherleck.de
+  licenses:
+    - GPL-2.0
 - repo: nix_stable_26_05
   srcname: elinks
   visiblename: elinks
@@ -1361,21 +1292,6 @@
   status: outdated
   maintainers:
     - packaging@lists.openkylin.top
-  categories:
-    - web
-- repo: raspbian_oldstable
-  subrepo: main
-  srcname: elinks
-  binnames:
-    - elinks
-    - elinks-data
-    - elinks-doc
-  visiblename: elinks
-  version: 0.13.2
-  origversion: 0.13.2-1
-  status: outdated
-  maintainers:
-    - aelmahmoudy@users.sourceforge.net
   categories:
     - web
 - repo: openmamba
@@ -1530,7 +1446,7 @@
   categories:
     - web
 - repo: parrot
-  subrepo: parrot/main
+  subrepo: parrot-updates/main
   srcname: elinks
   binnames:
     - elinks
@@ -1545,7 +1461,7 @@
   categories:
     - web
 - repo: parrot
-  subrepo: parrot-updates/main
+  subrepo: parrot/main
   srcname: elinks
   binnames:
     - elinks
@@ -1604,6 +1520,102 @@
     - pkgsrc-users@netbsd.org
   categories:
     - www
+- repo: pld
+  srcname: elinks
+  visiblename: elinks
+  version: 0.20.0
+  origversion: 0.20.0-2
+  status: newest
+- repo: pureos_amber
+  subrepo: amber/main
+  srcname: elinks
+  binnames:
+    - elinks
+    - elinks-data
+    - elinks-doc
+  visiblename: elinks
+  version: 0.13~20190125
+  origversion: 0.13~20190125-3
+  status: outdated
+  maintainers:
+    - aelmahmoudy@users.sourceforge.net
+  categories:
+    - web
+- repo: pureos_byzantium
+  subrepo: byzantium/main
+  srcname: elinks
+  binnames:
+    - elinks
+    - elinks-data
+    - elinks-doc
+  visiblename: elinks
+  version: 0.13.2
+  origversion: 0.13.2-1
+  status: outdated
+  maintainers:
+    - aelmahmoudy@users.sourceforge.net
+  categories:
+    - web
+- repo: pureos_landing
+  subrepo: landing/main
+  srcname: elinks
+  binnames:
+    - elinks
+    - elinks-data
+    - elinks-doc
+  visiblename: elinks
+  version: 0.18.0
+  origversion: 0.18.0-1
+  status: outdated
+  maintainers:
+    - aelmahmoudy@users.sourceforge.net
+  categories:
+    - web
+- repo: raspbian_oldstable
+  subrepo: main
+  srcname: elinks
+  binnames:
+    - elinks
+    - elinks-data
+    - elinks-doc
+  visiblename: elinks
+  version: 0.13.2
+  origversion: 0.13.2-1
+  status: outdated
+  maintainers:
+    - aelmahmoudy@users.sourceforge.net
+  categories:
+    - web
+- repo: raspbian_stable
+  subrepo: main
+  srcname: elinks
+  binnames:
+    - elinks
+    - elinks-data
+    - elinks-doc
+  visiblename: elinks
+  version: 0.18.0
+  origversion: 0.18.0-1+rpi1
+  status: outdated
+  maintainers:
+    - aelmahmoudy@users.sourceforge.net
+  categories:
+    - web
+- repo: raspbian_testing
+  subrepo: main
+  srcname: elinks
+  binnames:
+    - elinks
+    - elinks-data
+    - elinks-doc
+  visiblename: elinks
+  version: 0.19.1
+  origversion: 0.19.1-2.1
+  status: outdated
+  maintainers:
+    - aelmahmoudy@users.sourceforge.net
+  categories:
+    - web
 - repo: rocky_8
   subrepo: PowerTools
   srcname: elinks
@@ -1920,6 +1932,18 @@
   summary: text-based web browser
   licenses:
     - GNU General Public License, version 2.0
+- repo: openeuler_20_03_lts_sp3
+  srcname: elinks
+  visiblename: elinks
+  version: "0.12"
+  origversion: 0.12-1.oe1
+  status: outdated
+  summary: A text-mode Web browser
+  licenses:
+    - GPLv2
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: openeuler_20_03_lts_sp4
   srcname: elinks
   visiblename: elinks
@@ -1931,6 +1955,43 @@
     - GPLv2
   categories:
     - Unspecified
+  vulnerable: true
+- repo: amazon_1
+  subrepo: main
+  srcname: elinks
+  visiblename: elinks
+  version: "0.12"
+  origversion: 0.12-0.36.pre6.14.amzn1
+  status: outdated
+  summary: A text-mode Web browser
+  licenses:
+    - GPLv2
+  categories:
+    - Applications/Internet
+  vulnerable: true
+- repo: amazon_2
+  srcname: elinks
+  visiblename: elinks
+  version: "0.12"
+  origversion: 0.12-0.57.pre6.amzn2.0.2
+  status: outdated
+  summary: A text-mode Web browser
+  licenses:
+    - GPLv2
+  categories:
+    - Applications/Internet
+  vulnerable: true
+- repo: amazon_2
+  srcname: elinks
+  visiblename: elinks
+  version: "0.12"
+  origversion: 0.12-0.57.pre6.amzn2
+  status: outdated
+  summary: A text-mode Web browser
+  licenses:
+    - GPLv2
+  categories:
+    - Applications/Internet
   vulnerable: true
 - repo: openeuler_22_03_lts_sp1
   srcname: elinks
@@ -1959,67 +2020,6 @@
   visiblename: elinks
   version: "0.12"
   origversion: 0.12-3.oe2203sp3
-  status: outdated
-  summary: A text-mode Web browser
-  licenses:
-    - GPLv2
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_2
-  srcname: elinks
-  visiblename: elinks
-  version: "0.12"
-  origversion: 0.12-0.57.pre6.amzn2
-  status: outdated
-  summary: A text-mode Web browser
-  licenses:
-    - GPLv2
-  categories:
-    - Applications/Internet
-  vulnerable: true
-- repo: amazon_1
-  subrepo: main
-  srcname: elinks
-  visiblename: elinks
-  version: "0.12"
-  origversion: 0.12-0.36.pre6.14.amzn1
-  status: outdated
-  summary: A text-mode Web browser
-  licenses:
-    - GPLv2
-  categories:
-    - Applications/Internet
-  vulnerable: true
-- repo: amazon_2
-  srcname: elinks
-  visiblename: elinks
-  version: "0.12"
-  origversion: 0.12-0.36.pre6.amzn2
-  status: outdated
-  summary: A text-mode Web browser
-  licenses:
-    - GPLv2
-  categories:
-    - Applications/Internet
-  vulnerable: true
-- repo: amazon_2
-  srcname: elinks
-  visiblename: elinks
-  version: "0.12"
-  origversion: 0.12-0.57.pre6.amzn2.0.2
-  status: outdated
-  summary: A text-mode Web browser
-  licenses:
-    - GPLv2
-  categories:
-    - Applications/Internet
-  vulnerable: true
-- repo: openeuler_20_03_lts_sp3
-  srcname: elinks
-  visiblename: elinks
-  version: "0.12"
-  origversion: 0.12-1.oe1
   status: outdated
   summary: A text-mode Web browser
   licenses:
